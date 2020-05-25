@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ma page test de formulaire</title>
-  </head>
-  <body>
-    <p>Voici ma page web de formulaire</p>
-    <form action="thanks.php" method="GET">
+<head>
+    <title>
+        Formulaire
+    </title>
+
+
+</head>
+
+<body>
+
+<form action="thanks.php" method="post">
     <div>
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name">
-    </div>
-    <div>
-        <label for="Prénom">Prénom :</label>
+        <label for="prenom">Prenom : </label>
         <input type="text" id="prenom" name="prenom">
     </div>
+    <br>
+    <div class="c100">
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" name="nom">
+    </div>
+    <br>
     <div>
-        <label for="mail">e-mail :</label>
-        <input type="email" id="mail" name="mail">
+        <label for="email">E-Mail : </label>
+        <input type="text" id="email" name="email">
     </div>
+    <br>
     <div>
-        <label for="tel">tel :</label>
-        <input type="tel" id="tel" name="tel">
+        <label for="telephone">Telephone : </label>
+        <input type="text" id="telephone" name="telephone">
     </div>
+    <br>
     <div>
-        <label for="msg">Message :</label>
-        <textarea id="msg" name="message"></textarea>
+        <label for="sujet">Sujet : </label>
+        <select id="sujet" name="sujet">
+            <option value="sujet1">Sujet 1</option>
+            <option value="sujet2">Sujet 2</option>
+            <option value="sujet3">Sujet 3</option>
+        </select>
     </div>
+    <br>
+    <div>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message">
 
-    <label for="Sujet">Sujet :</label>
-    <select name="Sujet" id="Sujet">
-      <option>FAQ</option>
-      <option>Inscription</option>
-      <option>Divers</option>
-    </select>
-
-
-    <div  class="button">
-      <button  type="submit">Envoyer votre message</button>
+                </textarea>
     </div>
-</body>
+    <div class="button">
+        <button type="submit">Envoyer le message</button>
+    </div>
 </form>
 
+</body>
 
 </html>
-
