@@ -6,48 +6,42 @@
   </head>
   <body>
     <p>Voici ma page web de formulaire</p>
-    <form action="thanks.php" method="post">
+    <form action="thanks.php" method="GET">
     <div>
         <label for="name">Nom :</label>
-        <input type="text" id="name" name="user_name">
+        <input type="text" id="name" name="name">
     </div>
     <div>
-        <label for="name">Prénom :</label>
-        <input type="text" id="name" name="user_name">
+        <label for="Prénom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom">
     </div>
     <div>
         <label for="mail">e-mail :</label>
-        <input type="email" id="mail" name="user_mail">
+        <input type="email" id="mail" name="mail">
     </div>
     <div>
         <label for="tel">tel :</label>
-        <input type="tel" id="tel" name="user_tel">
+        <input type="tel" id="tel" name="tel">
     </div>
     <div>
         <label for="msg">Message :</label>
-        <textarea id="msg" name="user_message"></textarea>
+        <textarea id="msg" name="message"></textarea>
     </div>
-    <select>
+
+    <label for="Sujet">Sujet :</label>
+    <select name="Sujet" id="Sujet">
       <option>FAQ</option>
       <option>Inscription</option>
       <option>Divers</option>
     </select>
 
+
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>
     </div>
+</body>
 </form>
-  </body>
-?php
-  var_dump($_GET);
-?>
-<?php
-  echo  $_GET['user_name'];
-?>
-    
-<?php
-  header('Location: http://localhost:8000/thanks.php');
-  exit();
-?>
+
 
 </html>
+
