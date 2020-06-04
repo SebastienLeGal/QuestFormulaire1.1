@@ -7,13 +7,9 @@
 
 <p>
     <?php
-
-    echo 'Merci ' .$_POST["prenom"].' '.$_POST["nom"].' de nous avoir contacté à propos de "'.$_POST["sujet"].'".';
-    echo'<br><br>';
-    echo 'Un de nos conseiller vous contactera soit à l’adresse '.$_POST["email"].' ou par téléphone au 
-    '.$_POST["telephone"].' dans les plus brefs délais pour traiter votre demande:';
-    echo'<br><br>';
-    echo $_POST["message"];
+        echo "Merci $prenom $nom de nous avoir contacté à propos de $sujet.
+        Un de nos conseiller vous contactera soit à l’adresse $email ou par téléphone au
+        $tel dans les plus brefs délais pour traiter votre demande : $message";
     ?>
 
     
